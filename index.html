@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Initializing Portfolio...</div>
+            <div class="loading-progress">
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-logo">&lt;/&gt;</span>
+                <span class="nav-name">dev</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="particles-container" id="particles"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Shubham</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Problem-solving excites me, and I’m driven by the thrill of turning ideas into practical solutions.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn--primary hero-btn" onclick="scrollToSection('projects')">
+                        View My Work
+                    </button>
+                    <button class="btn btn--outline hero-btn" onclick="scrollToSection('contact')">
+                        Get In Touch
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="code-title">developer.js</div>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="keyword">const</span> <span class="variable">developer</span> = {</div>
+                        <div class="code-line">  <span class="property">name</span>: <span class="string">'Shubham'</span>,</div>
+                        <div class="code-line">  <span class="property">skills</span>: [<span class="string">'Data Structures'</span>, <span class="string">'Django'</span>, <span class="string">'React'</span>],</div>
+                        <div class="code-line">  <span class="property">passionate</span>: <span class="boolean">true</span></div>
+                        <div class="code-line">};</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p> I’m a passionate and self-motivated programmer <br>who loves applying what I learn to real-world challenges.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="1859">0</div>
+                            <div class="stat-label">Problems Solved</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2">1</div>
+                            <div class="stat-label">Years of Coding Experience</div>
+                        </div>
+                        
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="7">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="DataStructures" data-level="90">
+                    <div class="skill-icon"><img src="images/datastructures.png" alt="Data Structures" style="width:62px;height:62px;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">Data Structures</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                        <div class="skill-percentage">90%</div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="Django" data-level="80">
+                    <div class="skill-icon"><img src="images/django.png" alt="Djano" style="width:54px;height:54px;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">Django</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="ReactJS" data-level="60">
+                    <div class="skill-icon"><img src="images/reactjs.png" alt="ReactJS" style="width:52px;height:48px;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">ReactJS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60"></div>
+                        </div>
+                        <div class="skill-percentage">60%</div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="ML" data-level="75">
+                    <div class="skill-icon"><img src="images/ml.png" alt="ML" style="width:52px;height:48px;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">Machine Learning</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                        <div class="skill-percentage">75%</div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="cpp" data-level="90">
+                    <div class="skill-icon"><img src="images/cpp.png" alt="cpp" style="width:52px;height:52px;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">C++</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                        <div class="skill-percentage">90%</div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="python" data-level="80">
+                    <div class="skill-icon"><img src="images/python.png" alt="python" style="width:52px;height:52px;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">Python</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="aws" data-level="60">
+                    <div class="skill-icon"><img src="images/aws.png" alt="aws" style="width:58px;height:58px;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">AWS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60"></div>
+                        </div>
+                        <div class="skill-percentage">60%</div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="sql" data-level="80">
+                    <div class="skill-icon"><img src="images/sql.png" alt="sql" style="width:65px;height:65px;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">SQL</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <div class="skill-percentage">80%</div>
+                    </div>
+                </div>
+                <div class="skill-card" data-skill="TailwindCSS" data-level="60">
+                    <div class="skill-icon"><img src="images/tailwind.png" alt="tailwind" style="width:65px;height:65px;"></div>
+                    <div class="skill-info">
+                        <h3 class="skill-name">TailwindCSS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60"></div>
+                        </div>
+                        <div class="skill-percentage">60%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card achievement-card--gold">
+                    <div class= "achievment-badge" style = "padding-bottom:10px"><img src="images/500.gif" alt="sql" style="width:65px;height:65px;"></div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">LeetCode Guardian</h3>
+                        <p class="achievement-description">Achieved Guardian badge on LeetCode with contest <strong>2151</strong></p>
+                        <div class="achievement-stats">Top 1.2% globally</div>
+                    </div>
+                    <div class="achievement-glow achievement-glow--gold"></div>
+                </div>
+                <div class="achievement-card achievement-card--gold">
+                    <div class= "achievment-badge" style = "padding-bottom:10px"><img src="images/guardian.gif" alt="sql" style="width:65px;height:65px;"></div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">LeetCode Guardian</h3>
+                        <p class="achievement-description">Achieved Guardian badge on LeetCode with contest <strong>2151</strong></p>
+                        <div class="achievement-stats">Top 1.2% globally</div>
+                    </div>
+                    <div class="achievement-glow achievement-glow--gold"></div>
+                </div>
+                <div class="achievement-card achievement-card--gold">
+                    <div class= "achievment-badge" style = "padding-bottom:10px"><img src="images/annual.gif" alt="sql" style="width:65px;height:65px;"></div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">LeetCode Guardian</h3>
+                        <p class="achievement-description">Achieved Guardian badge on LeetCode with contest <strong>2151</strong></p>
+                        <div class="achievement-stats">Top 1.2% globally</div>
+                    </div>
+                    <div class="achievement-glow achievement-glow--gold"></div>
+                </div>
+                <div class="achievement-card achievement-card--purple">
+                    <div class="achievement-badge">🏆</div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Contest Expert</h3>
+                        <p class="achievement-description">Consistently ranked in top 5% in coding competitions</p>
+                        <div class="achievement-stats">50+ contests participated</div>
+                    </div>
+                    <div class="achievement-glow achievement-glow--purple"></div>
+                </div>
+                <div class="achievement-card achievement-card--green">
+                    <div class="achievement-badge">💻</div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Open Source Contributor</h3>
+                        <p class="achievement-description">Active contributor to major open source projects</p>
+                        <div class="achievement-stats">200+ contributions</div>
+                    </div>
+                    <div class="achievement-glow achievement-glow--green"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+               
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Dec 2024 – Apr 2025</div>
+                        <h3 class="timeline-title">Mentor & Developer</h3>
+                        <div class="timeline-company">CodeChef</div>
+                        <p class="timeline-description">
+                        Conducted DSA workshops & mentoring sessions at KL University.  
+                        Built tools to boost engagement and participation on CodeChef.  
+                        Automated performance analysis for personalized learning.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2025</div>
+                        <h3 class="timeline-title">Software Engineering Intern</h3>
+                        <div class="timeline-company">Walmart (Virtual)</div>
+                        <p class="timeline-description">
+                        Built a Power-of-Two Max Heap in Java for logistics optimization.  
+                        Designed UML class diagrams & ER models for complex requirements.  
+                        Completed the Advanced Software Engineering Job Simulation program.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2025 – Present</div>
+                        <h3 class="timeline-title">Software Developer Intern</h3>
+                        <div class="timeline-company">Gryphon Academy</div>
+                        <p class="timeline-description">
+                        Built production-ready apps to streamline workflows and automated training operations.  
+                        Developed DSA Practice Platform with LeetCode sync and GDPI Evaluator replacing manual scoring.  
+                        Created Live Poll System for HR meets enabling real-time feedback with dashboards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="project-link">
+                                    <span>💻 Code</span>
+                                </a>
+                                <a href="https://example.com" target="_blank" class="project-link">
+                                    <span>🚀 Live</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <div class="project-icon">🛒</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">Full-stack e-commerce solution with React, Node.js, and Stripe integration</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="project-link">
+                                    <span>💻 Code</span>
+                                </a>
+                                <a href="https://example.com" target="_blank" class="project-link">
+                                    <span>🚀 Live</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <div class="project-icon">📋</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">Collaborative project management tool with real-time updates</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="project-link">
+                                    <span>💻 Code</span>
+                                </a>
+                                <a href="https://marketplace.visualstudio.com" target="_blank" class="project-link">
+                                    <span>🚀 Live</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <div class="project-icon">🤖</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Code Assistant</h3>
+                        <p class="project-description">VS Code extension for intelligent code suggestions and debugging</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">VS Code API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+
+                    <div class="social-links">
+                        <a href="https://github.com/3112shubham" target="_blank" class="social-link">
+                            <span><img src="images/github.png" alt="GitHub" width="22" height="22"></span> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/shubham-galande-1a8120229/" target="_blank" class="social-link">
+                            <span><img src="images/linkedin.png" alt="Linkedin" width="22" height="25"></span>LinkedIn
+                        </a>
+                        <a href="https://leetcode.com/u/shubham_3112/" target="_blank" class="social-link">
+                            <span>
+                                <img src="images/lc.png" alt="LeetCode" width="20" height="20">
+                            </span> 
+                            LeetCode
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Alex Developer. Built with ❤️ and lots of ☕</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
