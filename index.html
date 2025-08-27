@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
     <style>
         :root {
             /* Primitive Color Tokens */
@@ -885,6 +887,9 @@
             font-size: 4rem;
             filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
         }
+        a {
+            text-decoration: none;
+        }
 
         .project-overlay {
             position: absolute;
@@ -1735,21 +1740,15 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com" target="_blank" class="project-link">
-                                    <span>💻 Code</span>
-                                </a>
-                                <a href="https://example.com" target="_blank" class="project-link">
-                                    <span>🚀 Live</span>
-                                </a>
+                    <a href="https://github.com/3112shubham/DSAJudge" target="_blank" >
+                        <div class="project-image">
+                            <div class="project-overlay">
+                            </div>
+                            <div class="project-placeholder">
+                                <div class="project-icon">📚</div>
                             </div>
                         </div>
-                        <div class="project-placeholder">
-                            <div class="project-icon">🛒</div>
-                        </div>
-                    </div>
+                    </a>
                     <div class="project-content">
                         <h3 class="project-title">DSA Portal</h3>
                         <p class="project-description">Full-Stack Coding Practice & Evaluation Platform</p>
@@ -1762,21 +1761,15 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com" target="_blank" class="project-link">
-                                    <span>💻 Code</span>
-                                </a>
-                                <a href="https://example.com" target="_blank" class="project-link">
-                                    <span>🚀 Live</span>
-                                </a>
+                   <a href="https://github.com/3112shubham/CodeXHub" target="_blank" >
+                        <div class="project-image">
+                            <div class="project-overlay">
+                            </div>
+                            <div class="project-placeholder">
+                                <div class="project-icon">🧑‍💻</div>
                             </div>
                         </div>
-                        <div class="project-placeholder">
-                            <div class="project-icon">📋</div>
-                        </div>
-                    </div>
+                    </a>
                     <div class="project-content">
                         <h3 class="project-title">CodeXHub</h3>
                         <p class="project-description"> Web-based IDE supporting multiple users editing simultaneously.</p>
@@ -1789,21 +1782,15 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com" target="_blank" class="project-link">
-                                    <span>💻 Code</span>
-                                </a>
-                                <a href="https://marketplace.visualstudio.com" target="_blank" class="project-link">
-                                    <span>🚀 Live</span>
-                                </a>
+                    <a href="https://github.com/3112shubham/GD-Evaluator" target="_blank" >
+                        <div class="project-image">
+                            <div class="project-overlay">
+                            </div>
+                            <div class="project-placeholder">
+                                <div class="project-icon">🤖</div>
                             </div>
                         </div>
-                        <div class="project-placeholder">
-                            <div class="project-icon">🤖</div>
-                        </div>
-                    </div>
+                    </a>
                     <div class="project-content">
                         <h3 class="project-title">Assess Hub</h3>
                         <p class="project-description">Web app to evaluate 20+ GD/PI skills through an intuitive click-based UI.</p>
@@ -1815,21 +1802,15 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com" target="_blank" class="project-link">
-                                    <span>💻 Code</span>
-                                </a>
-                                <a href="https://example.com" target="_blank" class="project-link">
-                                    <span>🚀 Live</span>
-                                </a>
+                    <a href="https://github.com/3112shubham/InsuranceFraudDetection" target="_blank" >
+                        <div class="project-image">
+                            <div class="project-overlay">
+                            </div>
+                            <div class="project-placeholder">
+                                <div class="project-icon">🛡️</div>
                             </div>
                         </div>
-                        <div class="project-placeholder">
-                            <div class="project-icon">🛒</div>
-                        </div>
-                    </div>
+                    </a>
                     <div class="project-content">
                         <h3 class="project-title">Insurance Fraud Detection</h3>
                         <p class="project-description">Full-stack fraud detection app with ML-based probability scoring & delivered report.</p>
@@ -1841,21 +1822,15 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com" target="_blank" class="project-link">
-                                    <span>💻 Code</span>
-                                </a>
-                                <a href="https://example.com" target="_blank" class="project-link">
-                                    <span>🚀 Live</span>
-                                </a>
+                    <a href="https://github.com/3112shubham/trainer-logs" target="_blank" >
+                        <div class="project-image">
+                            <div class="project-overlay">
+                            </div>
+                            <div class="project-placeholder">
+                                <div class="project-icon">📑</div>
                             </div>
                         </div>
-                        <div class="project-placeholder">
-                            <div class="project-icon">🛒</div>
-                        </div>
-                    </div>
+                    </a>
                     <div class="project-content">
                         <h3 class="project-title">Trainer Log</h3>
                         <p class="project-description">Automated trainer reporting by digitizing daily session logs.<br>Enabled one-click invoice & closure report generation, reducing 3–4 days of manual work to seconds.</p>
@@ -1868,21 +1843,15 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/3112shubham/Live-Poll" target="_blank" class="project-link">
-                                    <span>💻 Code</span>
-                                </a>
-                                <a href="https://live-poll-bice.vercel.app/results" target="_blank" class="project-link">
-                                    <span>🚀 Live</span>
-                                </a>
+                    <a href="https://github.com/3112shubham/Live-Poll" target="_blank" >
+                        <div class="project-image">
+                            <div class="project-overlay">
+                            </div>
+                            <div class="project-placeholder">
+                                <div class="project-icon">📊</div>
                             </div>
                         </div>
-                        <div class="project-placeholder">
-                            <div class="project-icon">🛒</div>
-                        </div>
-                    </div>
+                    </a>
                     <div class="project-content">
                         <h3 class="project-title">Live Poll</h3>
                         <p class="project-description">Built a 3-view live polling app (Audience, Presenter, Operator) for Business meet.</p>
@@ -1962,6 +1931,20 @@
     </footer>
 
     <script>
+        // Firebase configuration - Replace with your project's config
+        const firebaseConfig = {
+        apiKey: "AIzaSyBDO31a5ZHhl2rQLMoGTQpaxV8t2BksddU",
+        authDomain: "portfolio-cacc6.firebaseapp.com",
+        projectId: "portfolio-cacc6",
+        storageBucket: "portfolio-cacc6.firebasestorage.app",
+        messagingSenderId: "861144741704",
+        appId: "1:861144741704:web:ff6bbf275eeab275f0657d",
+        measurementId: "G-02VLRPE63N"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
         // Portfolio JavaScript - Modern Software Engineer Portfolio
         class Portfolio {
             constructor() {
@@ -2078,10 +2061,9 @@
                 if (!typingText) return;
                 
                 const phrases = [
-                    'Full Stack Software Engineer',
+                    'Full Stack Developer',
                     'Problem Solver & Innovator',
                     'LeetCode Guardian 🛡️',
-                    'React & Node.js Expert',
                     'Building the Future'
                 ];
                 
@@ -2348,42 +2330,56 @@
             }
 
             handleFormSubmission(form) {
-                const formData = new FormData(form);
-                const submitBtn = form.querySelector('button[type="submit"]');
-                const originalText = submitBtn.textContent;
-                
-                // Validate form
-                const name = formData.get('name');
-                const email = formData.get('email');
-                const subject = formData.get('subject');
-                const message = formData.get('message');
-                
-                if (!name || !email || !subject || !message) {
-                    this.showNotification('Please fill in all fields.', 'error');
-                    return;
-                }
-                
-                // Show loading state
-                submitBtn.textContent = 'Sending...';
-                submitBtn.disabled = true;
-                submitBtn.style.opacity = '0.7';
-                
-                // Simulate form submission (replace with actual backend call)
-                setTimeout(() => {
-                    this.showNotification('Message sent successfully! I\'ll get back to you soon. 🚀', 'success');
-                    form.reset();
-                    
-                    // Reset button
-                    submitBtn.textContent = originalText;
-                    submitBtn.disabled = false;
-                    submitBtn.style.opacity = '1';
-                    
-                    // Remove focused classes from form groups
-                    const formGroups = form.querySelectorAll('.form-group');
-                    formGroups.forEach(group => group.classList.remove('focused'));
-                    
-                }, 2000);
-            }
+  const formData = new FormData(form);
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn.textContent;
+  
+  // Validate form
+  const name = formData.get('name');
+  const email = formData.get('email');
+  const subject = formData.get('subject');
+  const message = formData.get('message');
+  
+  if (!name || !email || !subject || !message) {
+    this.showNotification('Please fill in all fields.', 'error');
+    return;
+  }
+  
+  // Show loading state
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
+  submitBtn.style.opacity = '0.7';
+  
+  // Store the message in Firestore
+  db.collection('messages').add({
+    name,
+    email,
+    subject,
+    message,
+    date: new Date().toISOString(),
+    read: false,
+    archived: false
+  })
+  .then((docRef) => {
+    // Show success message
+    this.showNotification('Message sent successfully! I\'ll get back to you soon. 🚀', 'success');
+    form.reset();
+  })
+  .catch((error) => {
+    console.error('Error adding document: ', error);
+    this.showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
+  })
+  .finally(() => {
+    // Reset button
+    submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
+    submitBtn.style.opacity = '1';
+    
+    // Remove focused classes from form groups
+    const formGroups = form.querySelectorAll('.form-group');
+    formGroups.forEach(group => group.classList.remove('focused'));
+  });
+}
 
             showNotification(message, type = 'info') {
                 // Remove existing notifications
