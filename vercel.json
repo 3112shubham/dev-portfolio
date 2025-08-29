@@ -3,6 +3,10 @@
     {
       "source": "/reply/:path*",
       "destination": "https://messages-umber.vercel.app/:path*"
+    },
+    {
+      "source": "/gd/:path*",
+      "destination": "https://gd-evaluator.vercel.app/:path*"
     }
   ]
 }
