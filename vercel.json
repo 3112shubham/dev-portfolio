@@ -7,6 +7,10 @@
     {
       "source": "/reply/:path*",
       "destination": "https://messages-umber.vercel.app/:path*"
+    },
+    {
+      "source":"/dsajudge/:path*",
+      "destination":"https://dsajudge.onrender.com/:path*"
     }
   ]
 }
