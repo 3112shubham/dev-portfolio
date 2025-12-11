@@ -14,8 +14,7 @@
     },
     {
       "source": "/gate/:path*",
-      "destination": "https://studyplanner-eight.vercel.app/:path*",
-      "permanent": false
+      "destination": "https://studyplanner-eight.vercel.app/:path*"
     }
   ]
 }
