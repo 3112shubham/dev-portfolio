@@ -13,7 +13,7 @@
       "destination":"https://dsajudge.onrender.com/:path*"
     },
     {
-      "source": "/gate/:path*",
+      "source": "/:path*",
       "destination": "https://studyplanner-eight.vercel.app/:path*"
     }
   ]
