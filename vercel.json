@@ -13,6 +13,10 @@
       "destination":"https://dsajudge.onrender.com/:path*"
     },
     {
+      "source": "/compiler/:path*",
+      "destination": "https://judge0compiler.vercel.app/:path*"
+    },
+    {
       "source": "/:path*",
       "destination": "https://studyplanner-eight.vercel.app/:path*"
     }
