@@ -17,7 +17,7 @@
       "destination": "https://judge0compiler.vercel.app/:path*"
     },
     {
-      "source": "/:path*",
+      "source": "/study/:path*",
       "destination": "https://studyplanner-eight.vercel.app/:path*"
     }
   ]
